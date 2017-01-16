@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">cutechat</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- launch-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="enterAccount">输入你的账号</string>
+    <string name="enterPassword">输入你的密码</string>
+
+    <!-- Setting-->
+    <string name="call_alert">来电提醒</string>
+    <string name="call_music">来电铃声</string>
+    <string name="auto_play">自动播放</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="more">暂时没有更多</string>
+    <string name="about">关于CuteChat</string>
+    <string name="exit">退出</string>
+
+    <!-- person -->
+    <string name="you_name">输入你的昵称</string>
+    <string name="address_more">具体地址信息</string>
+</resources>

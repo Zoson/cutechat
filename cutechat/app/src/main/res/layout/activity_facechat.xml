@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.init.cutechat.ui.FaceChatLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00ffffff"
+    android:id="@+id/rl_facechat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/sf_camera"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:id="@+id/rl_cfv"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.init.cutechat.ui.CuteFaceView
+            android:id="@+id/cfv_it"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_gravity="center"
+            />
+        <com.init.cutechat.ui.CuteFaceView
+            android:id="@+id/cfv_me"
+            android:layout_alignRight="@+id/cfv_it"
+            android:layout_alignBottom="@+id/cfv_it"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <com.init.cutechat.ui.FaceView
+            android:id="@+id/fv_it"
+            android:layout_alignBottom="@+id/cfv_it"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:id="@+id/im_itvoice"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/hiscommentdark"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_cfv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="庄卓鑫"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#eee"
+            android:text="18814111116|广东广州"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_state"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_operation"
+        android:id="@+id/layout_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+    </include>
+
+
+
+</com.init.cutechat.ui.FaceChatLayout>

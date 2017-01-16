@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.init.cutechat"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        ndk{
+            moduleName "native_sample"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main{
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = []
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/jxmpp-core-0.4.1.jar')
+    compile files('libs/jxmpp-util-cache-0.4.1.jar')
+    compile files('libs/smack-android-4.1.7.jar')
+    compile files('libs/smack-core-4.1.7.jar')
+    compile files('libs/smack-extensions-4.1.7.jar')
+    compile files('libs/smack-im-4.1.7.jar')
+    compile files('libs/smack-tcp-4.1.7.jar')
+    compile files('libs/smack-sasl-provided-4.1.7.jar')
+}

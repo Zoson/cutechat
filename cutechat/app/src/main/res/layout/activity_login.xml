@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.init.cutechat.ui.LoginView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/loginView"
+    android:background="@color/bg_color"
+    >
+    <ImageView
+        android:id="@+id/im_head"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/ico"
+        android:background="@drawable/bt_radius"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:hint="@string/enterAccount"
+        android:textColorHint="@color/textHint"
+        android:id="@+id/et_account"
+        style="@style/EditText"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:hint="@string/enterPassword"
+        android:textColorHint="@color/textHint"
+        android:id="@+id/et_password"
+        style="@style/PsEditText"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/bt_login"
+        style="@style/Button"
+        android:text="@string/login"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/bt_register"
+        style="@style/Button"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:alpha="0.8"
+        android:textColor="@color/theme_color"
+        android:background="@drawable/bt_radius_bgcolor"
+        android:layout_marginTop="10dp"
+        />
+</com.init.cutechat.ui.LoginView>

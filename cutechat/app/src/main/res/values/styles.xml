@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/bt_radius</item>
+    </style>
+    <style name="EditText">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@drawable/et_radius_white</item>
+    </style>
+
+    <style name="PsEditText" parent="EditText">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="itemRl">
+        <item name="android:background">@drawable/bt_item_selector</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="itemTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="titlebar">
+        <item name="android:background">@color/theme_color_alpha</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/titlebar_height</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_setting"
+    android:background="@color/bg_color"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/titlebar">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_call_alert"
+        android:layout_marginTop="20dp"
+        style="@style/itemRl">
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/call_alert"
+            />
+        <Switch
+            android:id="@+id/sw_call_alert"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_call_music"
+        style="@style/itemRl">
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/call_music"
+            />
+        <Switch
+            android:id="@+id/sw_call_music"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_auto_play"
+        style="@style/itemRl">
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/auto_play"
+            />
+        <Switch
+            android:id="@+id/sw_auto_play"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_clean_cache"
+        style="@style/itemRl"
+        >
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/clean_cache"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_more"
+        style="@style/itemRl"
+        >
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/more"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/itemRl"
+        >
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/about"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_exit"
+        style="@style/itemRl">
+        <TextView
+            style="@style/itemTextView"
+            android:text="@string/exit"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
